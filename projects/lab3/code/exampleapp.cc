@@ -7,27 +7,32 @@
 #include <cstring>
 #include "Matrix4D.h"
 #include "Vector4D.h"
-
+#include "stb_image.h"
 
 const GLchar* vs =
 "#version 430\n"
 "layout(location=0) in vec3 pos;\n"
-"layout(location=1) in vec3 color;\n"
-"layout(location=0) out vec3 Color;\n"
-"layout(location=0) uniform mat4 trans;\n"
+"layout(location=1) in vec4 color;\n"
+"layout(location=2) in vec2 texCoord;\n"
+"uniform mat4 trans;\n"
+"out vec2 TexCoord;\n"
+"layout(location=0) out vec4 FragColor;\n"
 "void main()\n"
 "{\n"
-"	gl_Position = trans * vec4(pos, 1);\n"
-"	Color = color;\n"
+"	gl_Position = trans * vec4(pos, 1.0);\n"
+"	FragColor = color;\n"
+"   TexCoord = texCoord;\n"
 "}\n";
 
 const GLchar* ps =
 "#version 430\n"
-"layout(location=0) in vec3 color;\n"
-"out vec4 Color;\n"
+"layout(location=0) out vec4 FragColor;\n"
+"layout(location=1) in vec4 color;\n"
+"layout(location=2) in vec2 TexCoord;"
+"layout(location=1) uniform sampler2D texture1;\n"
 "void main()\n"
 "{\n"
-"	Color = vec4(color, 1.0);\n"
+"	FragColor = texture(texture1, TexCoord);\n"
 "}\n";
 
 using namespace Display;
@@ -74,7 +79,6 @@ namespace Example
 			0.5f,	-0.5f,	-1,			// pos 2
 			0,		0,		1,		1	// color 0
 		};
-
 		if (this->window->Open())
 		{
 			// set clear color to gray
@@ -145,34 +149,60 @@ namespace Example
 	void
 		ExampleApp::Run()
 	{
+		glUseProgram(this->program);
+		mesh.genvertexarray();
 		mesh.genvertexbuffer();
 		mesh.genindexbuffer();
+		mesh.setattrib();
+		
+		tex.bindTex();
+		tex.setTexParam();
+		tex.texPictureData = stbi_load("./resources/container.jpg", &tex.width, &tex.height, &tex.nChannels, 0);
+		if (tex.texPictureData) {
+			tex.loadTex(tex.texPictureData);
+			std::cout << "Hey you actually hit something" << "\n";
+		}
+		else {
+			std::cout << stbi_failure_reason() << "\n";
+			std::cout << "Nice shootin' Tex" << "\n";
+		}
+		stbi_image_free(tex.texPictureData);
+
+
 
 		while (this->window->IsOpen())
 		{
 			glClear(GL_COLOR_BUFFER_BIT);
 			this->window->Update();
 
-			// ▁ ▂ ▄ ▅ ▆ ▇ █ do ѕтυғғ █ ▇ ▆ ▅ ▄ ▂ ▁
+			///     _             _          __  __ 
+			///    | |           | |        / _|/ _|
+			///  __| | ___    ___| |_ _   _| |_| |_ 
+			/// / _` |/ _ \  / __| __| | | |  _|  _|
+			///| (_| | (_) | \__ \ |_| |_| | | | |  
+			/// \__,_|\___/  |___/\__|\__,_|_| |_|  
 			
 
 			//glBindVertexArray(mesh.vertexarray);
 			//mesh.genvertexarray();
-			mesh.setattrib();
+			glActiveTexture(GL_TEXTURE0);
+			glBindTexture(GL_TEXTURE_2D, tex.texID);
 
-			glUseProgram(this->program);
+			
 			
 			Matrix4D rotation;
 			Matrix4D translation;
 			Matrix4D transformation;
 			rotation = rotation.rotz((float)glfwGetTime() * 1.5f);
-			rotation.print();
-			translation = translation.translation(Vector4D(tan(glfwGetTime()), 0.0, 0, 0));
-			transformation = translation *rotation;
+			//rotation.print();
+			translation = translation.translation(Vector4D(sin(glfwGetTime()), sin(glfwGetTime()), 0, 0));
+			transformation = translation * rotation;
 			glUniformMatrix4fv(0, 1, GL_TRUE, &transformation.mxarr[0][0]);
+			glActiveTexture(GL_TEXTURE0);
+			glBindTexture(GL_TEXTURE_2D, tex.texID);
+			
 
-
-			glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, mesh.indexbuffer);
+			glBindVertexArray(mesh.vertexarray);
 			glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 
 			/*glEnableVertexAttribArray(0);
@@ -196,6 +226,9 @@ namespace Example
 			//glBindBuffer(GL_ARRAY_BUFFER, 0);
 			this->window->SwapBuffers();
 		}
-
+		glDeleteVertexArrays(1, &mesh.vertexarray);
+		glDeleteBuffers(1, &mesh.vertexbuffer);
+		glDeleteBuffers(1, &mesh.indexbuffer);
+		glfwTerminate();
 	}
 }// namespace Example

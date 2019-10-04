@@ -9,6 +9,7 @@
 #include "core/app.h"
 #include "render/window.h"
 #include "mesh.h"
+#include "TextureResource.h"
 namespace Example
 {
 class ExampleApp : public Core::App
@@ -31,5 +32,7 @@ private:
 	GLuint triangle;
 	Display::Window* window;
 	MeshResource mesh;
+	TextureResource tex;
+	TextureResource tex2;
 };
 } // namespace Example
