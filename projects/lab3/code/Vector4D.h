@@ -1,5 +1,5 @@
 #pragma once
-#include <Math.h>
+#include <math.h>
 #define POW2(x) ((x)*(x))
 
 

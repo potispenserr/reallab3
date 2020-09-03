@@ -7,6 +7,20 @@
 #include <cstring>
 #include "imgui.h"
 
+// HackFIX1337boi
+#ifndef strncpy_s
+
+typedef int errno_t;
+typedef size_t rsize_t;
+
+errno_t strncpy_s(char *__restrict__ dest, rsize_t destsz,
+                            const char *__restrict__ src, rsize_t count)
+{
+    return !strncpy(dest, src, (destsz>count)?count:destsz);
+}
+
+#endif
+
 #define STRING_BUFFER_SIZE 8192
 
 const GLchar* vs =

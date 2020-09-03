@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/rubcap8/Documents/reallab3/projects/ImGuiExample/code/exampleapp.cc
+config.h
+/home/rubcap8/Documents/reallab3/projects/ImGuiExample/code/config.h
+exampleapp.h
+/home/rubcap8/Documents/reallab3/projects/ImGuiExample/code/exampleapp.h
+cstring
+-
+imgui.h
+/home/rubcap8/Documents/reallab3/projects/ImGuiExample/code/imgui.h
+
+/home/rubcap8/Documents/reallab3/projects/ImGuiExample/code/exampleapp.h
+core/app.h
+/home/rubcap8/Documents/reallab3/projects/ImGuiExample/code/core/app.h
+render/window.h
+/home/rubcap8/Documents/reallab3/projects/ImGuiExample/code/render/window.h
+
+/home/rubcap8/Documents/reallab3/projects/ImGuiExample/code/main.cc
+config.h
+/home/rubcap8/Documents/reallab3/projects/ImGuiExample/code/config.h
+exampleapp.h
+/home/rubcap8/Documents/reallab3/projects/ImGuiExample/code/exampleapp.h
+

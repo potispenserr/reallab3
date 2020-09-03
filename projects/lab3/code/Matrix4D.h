@@ -1,6 +1,6 @@
 #pragma once
 #include "Vector4D.h"
-#include "Math.h"
+#include "math.h"
 #include <iostream>
 ///
 ///\copyright{
@@ -223,7 +223,7 @@ public:
 	///
 	///assignment overload
 	///
-	void operator=(Matrix4D& m)
+	void operator=(const Matrix4D& m)
 	{
 		mxarr[0][0] = m.mxarr[0][0];
 		mxarr[0][1] = m.mxarr[0][1];
@@ -463,6 +463,7 @@ public:
 			-y * sn + x * z * onedown, x * sn + y * z * onedown, cos(d) + z * z * onedown, 0,
 			0, 0, 0, 1
 		);
+		return rod;
 	}
 
 
