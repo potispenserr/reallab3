@@ -22,8 +22,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{D6416D93-2569-3670-AD24-8DA2E5EC334E}</ProjectGuid>
-    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <ProjectGuid>{07A1CAEF-06F9-3CF9-ADCE-9D86753F2DCF}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
     <Keyword>Win32Proj</Keyword>
     <Platform>x64</Platform>
     <ProjectName>ALL_BUILD</ProjectName>
@@ -105,10 +105,11 @@
     </Midl>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\projects\example\CMakeLists.txt">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/rubcap-8-local/Documents/GitGood/mesh resource/labb2/projects/example/CMakeLists.txt</Message>
+    <CustomBuild Include="C:\Users\Gregg\Documents\GitHub\reallab3\projects\example\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/Gregg/Documents/GitHub/reallab3/projects/example/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/rubcap-8-local/Documents/GitGood/mesh resource/labb2" "-BC:/Users/rubcap-8-local/Documents/GitGood/mesh resource/labb2/build" --check-stamp-file "C:/Users/rubcap-8-local/Documents/GitGood/mesh resource/labb2/build/projects/example/CMakeFiles/generate.stamp"
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Gregg/Documents/GitHub/reallab3 -BC:/Users/Gregg/Documents/GitHub/reallab3/build --check-stamp-file C:/Users/Gregg/Documents/GitHub/reallab3/build/projects/example/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -117,11 +118,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\build\projects\example\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Gregg\Documents\GitHub\reallab3\build\projects\example\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/rubcap-8-local/Documents/GitGood/mesh resource/labb2/projects/example/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/Gregg/Documents/GitHub/reallab3/projects/example/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/rubcap-8-local/Documents/GitGood/mesh resource/labb2" "-BC:/Users/rubcap-8-local/Documents/GitGood/mesh resource/labb2/build" --check-stamp-file "C:/Users/rubcap-8-local/Documents/GitGood/mesh resource/labb2/build/projects/example/CMakeFiles/generate.stamp"
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Gregg/Documents/GitHub/reallab3 -BC:/Users/Gregg/Documents/GitHub/reallab3/build --check-stamp-file C:/Users/Gregg/Documents/GitHub/reallab3/build/projects/example/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -130,11 +131,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\build\projects\example\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Gregg\Documents\GitHub\reallab3\build\projects\example\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/rubcap-8-local/Documents/GitGood/mesh resource/labb2/projects/example/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/Gregg/Documents/GitHub/reallab3/projects/example/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/rubcap-8-local/Documents/GitGood/mesh resource/labb2" "-BC:/Users/rubcap-8-local/Documents/GitGood/mesh resource/labb2/build" --check-stamp-file "C:/Users/rubcap-8-local/Documents/GitGood/mesh resource/labb2/build/projects/example/CMakeFiles/generate.stamp"
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Gregg/Documents/GitHub/reallab3 -BC:/Users/Gregg/Documents/GitHub/reallab3/build --check-stamp-file C:/Users/Gregg/Documents/GitHub/reallab3/build/projects/example/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -143,11 +144,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\build\projects\example\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Gregg\Documents\GitHub\reallab3\build\projects\example\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/rubcap-8-local/Documents/GitGood/mesh resource/labb2/projects/example/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/Gregg/Documents/GitHub/reallab3/projects/example/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/rubcap-8-local/Documents/GitGood/mesh resource/labb2" "-BC:/Users/rubcap-8-local/Documents/GitGood/mesh resource/labb2/build" --check-stamp-file "C:/Users/rubcap-8-local/Documents/GitGood/mesh resource/labb2/build/projects/example/CMakeFiles/generate.stamp"
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Gregg/Documents/GitHub/reallab3 -BC:/Users/Gregg/Documents/GitHub/reallab3/build --check-stamp-file C:/Users/Gregg/Documents/GitHub/reallab3/build/projects/example/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -156,24 +157,22 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\build\projects\example\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Gregg\Documents\GitHub\reallab3\build\projects\example\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\build\ZERO_CHECK.vcxproj">
-      <Project>{82BC3058-F67B-39EC-9B74-1C7E30ECFCAF}</Project>
+    <ProjectReference Include="C:\Users\Gregg\Documents\GitHub\reallab3\build\ZERO_CHECK.vcxproj">
+      <Project>{3B1CB3C2-0B86-3B8F-AE8F-77CB149F21C2}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\build\projects\example\example.vcxproj">
-      <Project>{24D5B380-5734-31A0-B8E8-5CD2FA1CA8B0}</Project>
+    <ProjectReference Include="C:\Users\Gregg\Documents\GitHub\reallab3\build\projects\example\example.vcxproj">
+      <Project>{84DE7BC3-401C-385A-8A7B-339ADB9994DC}</Project>
       <Name>example</Name>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

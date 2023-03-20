@@ -14,21 +14,23 @@ const GLchar* vs =
 "layout(location=0) in vec3 pos;\n"
 "layout(location=1) in vec4 color;\n"
 "layout(location=2) in vec2 texCoord;\n"
-"uniform mat4 trans;\n"
+"uniform mat4 model;\n"
+"uniform mat4 view;\n"
+"uniform mat4 projection;\n"
 "out vec2 TexCoord;\n"
-"layout(location=0) out vec4 FragColor;\n"
+"out vec4 FragColor;\n"
 "void main()\n"
 "{\n"
-"	gl_Position = trans * vec4(pos, 1.0);\n"
+"	gl_Position = projection * view * model * vec4(pos, 1.0);\n"
 "	FragColor = color;\n"
 "   TexCoord = texCoord;\n"
 "}\n";
 
 const GLchar* ps =
 "#version 430\n"
-"layout(location=0) out vec4 FragColor;\n"
-"layout(location=1) in vec4 color;\n"
-"layout(location=2) in vec2 TexCoord;"
+"out vec4 FragColor;\n"
+"in vec4 color;\n"
+"in vec2 TexCoord;"
 "layout(location=1) uniform sampler2D texture1;\n"
 "void main()\n"
 "{\n"
@@ -185,19 +187,34 @@ namespace Example
 
 			//glBindVertexArray(mesh.vertexarray);
 			//mesh.genvertexarray();
-			glActiveTexture(GL_TEXTURE0);
-			glBindTexture(GL_TEXTURE_2D, tex.texID);
+			//glActiveTexture(GL_TEXTURE0);
+			//glBindTexture(GL_TEXTURE_2D, tex.texID);
 
 			
 			
 			Matrix4D rotation;
 			Matrix4D translation;
-			Matrix4D transformation;
-			rotation = rotation.rotz((float)glfwGetTime() * 1.5f);
+			Matrix4D model;
+			//rotation = rotation.rotz((float)glfwGetTime() * 0.5f);
 			//rotation.print();
-			translation = translation.translation(Vector4D(sin(glfwGetTime()), sin(glfwGetTime()), 0, 0));
-			transformation = translation * rotation;
-			glUniformMatrix4fv(0, 1, GL_TRUE, &transformation.mxarr[0][0]);
+			translation = translation.translation(Vector4D(cos(glfwGetTime()) / 5, sin(glfwGetTime() / 5), 2, 0));
+			model = translation * rotation;
+
+			Matrix4D view;
+			view.translation(Vector4D(0.0, 0.0, 3.0, 0.0));
+
+			Matrix4D projection;
+			projection.perspective(0.0f, 800.0f, 0.0f, 600.0f, 0.1f, 100.0f);
+
+			unsigned int modelLoc = glGetUniformLocation(this->program, "model");
+			unsigned int viewLoc = glGetUniformLocation(this->program, "view");
+			unsigned int projectionLoc = glGetUniformLocation(this->program, "projection");
+
+			std::cout << modelLoc << "\n";
+
+			glUniformMatrix4fv(modelLoc, 1, GL_FALSE, &model.mxarr[0][0]);
+			glUniformMatrix4fv(viewLoc, 1, GL_FALSE, &view.mxarr[0][0]);
+			glUniformMatrix4fv(projectionLoc, 1, GL_FALSE, &projection.mxarr[0][0]);
 			glActiveTexture(GL_TEXTURE0);
 			glBindTexture(GL_TEXTURE_2D, tex.texID);
 			

@@ -22,8 +22,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{24D5B380-5734-31A0-B8E8-5CD2FA1CA8B0}</ProjectGuid>
-    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <ProjectGuid>{84DE7BC3-401C-385A-8A7B-339ADB9994DC}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
     <Keyword>Win32Proj</Keyword>
     <Platform>x64</Platform>
     <ProjectName>example</ProjectName>
@@ -59,25 +59,25 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\bin\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Gregg\Documents\GitHub\reallab3\bin\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">example.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">example</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\build\projects\example\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Gregg\Documents\GitHub\reallab3\build\projects\example\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">example.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">example</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\build\projects\example\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Gregg\Documents\GitHub\reallab3\build\projects\example\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">example.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">example</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\build\projects\example\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Gregg\Documents\GitHub\reallab3\build\projects\example\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">example.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">example</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
@@ -86,10 +86,9 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\engine;C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\exts\glew\include;C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\exts\glfw\include;C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\exts\imgui;C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\exts\imgui\examples\opengl3_example;C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\exts\nanovg\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Gregg\Documents\GitHub\reallab3\engine;C:\Users\Gregg\Documents\GitHub\reallab3\exts\glew\include;C:\Users\Gregg\Documents\GitHub\reallab3\exts\glfw\include;C:\Users\Gregg\Documents\GitHub\reallab3\exts\imgui;C:\Users\Gregg\Documents\GitHub\reallab3\exts\imgui\examples\opengl3_example;C:\Users\Gregg\Documents\GitHub\reallab3\exts\nanovg\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
-      <CompileAs>CompileAsCpp</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
@@ -104,10 +103,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;GLEW_STATIC;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\engine;C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\exts\glew\include;C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\exts\glfw\include;C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\exts\imgui;C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\exts\imgui\examples\opengl3_example;C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\exts\nanovg\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Gregg\Documents\GitHub\reallab3\engine;C:\Users\Gregg\Documents\GitHub\reallab3\exts\glew\include;C:\Users\Gregg\Documents\GitHub\reallab3\exts\glfw\include;C:\Users\Gregg\Documents\GitHub\reallab3\exts\imgui;C:\Users\Gregg\Documents\GitHub\reallab3\exts\imgui\examples\opengl3_example;C:\Users\Gregg\Documents\GitHub\reallab3\exts\nanovg\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\engine;C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\exts\glew\include;C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\exts\glfw\include;C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\exts\imgui;C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\exts\imgui\examples\opengl3_example;C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\exts\nanovg\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Gregg\Documents\GitHub\reallab3\engine;C:\Users\Gregg\Documents\GitHub\reallab3\exts\glew\include;C:\Users\Gregg\Documents\GitHub\reallab3\exts\glfw\include;C:\Users\Gregg\Documents\GitHub\reallab3\exts\imgui;C:\Users\Gregg\Documents\GitHub\reallab3\exts\imgui\examples\opengl3_example;C:\Users\Gregg\Documents\GitHub\reallab3\exts\nanovg\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -120,8 +119,8 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/rubcap-8-local/Documents/GitGood/mesh resource/labb2/build/projects/example/Debug/example.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/rubcap-8-local/Documents/GitGood/mesh resource/labb2/bin/example.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/Users/Gregg/Documents/GitHub/reallab3/build/projects/example/Debug/example.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Gregg/Documents/GitHub/reallab3/bin/example.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -130,9 +129,8 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\engine;C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\exts\glew\include;C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\exts\glfw\include;C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\exts\imgui;C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\exts\imgui\examples\opengl3_example;C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\exts\nanovg\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Gregg\Documents\GitHub\reallab3\engine;C:\Users\Gregg\Documents\GitHub\reallab3\exts\glew\include;C:\Users\Gregg\Documents\GitHub\reallab3\exts\glfw\include;C:\Users\Gregg\Documents\GitHub\reallab3\exts\imgui;C:\Users\Gregg\Documents\GitHub\reallab3\exts\imgui\examples\opengl3_example;C:\Users\Gregg\Documents\GitHub\reallab3\exts\nanovg\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
-      <CompileAs>CompileAsCpp</CompileAs>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <Optimization>MaxSpeed</Optimization>
@@ -148,10 +146,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;GLEW_STATIC;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\engine;C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\exts\glew\include;C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\exts\glfw\include;C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\exts\imgui;C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\exts\imgui\examples\opengl3_example;C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\exts\nanovg\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Gregg\Documents\GitHub\reallab3\engine;C:\Users\Gregg\Documents\GitHub\reallab3\exts\glew\include;C:\Users\Gregg\Documents\GitHub\reallab3\exts\glfw\include;C:\Users\Gregg\Documents\GitHub\reallab3\exts\imgui;C:\Users\Gregg\Documents\GitHub\reallab3\exts\imgui\examples\opengl3_example;C:\Users\Gregg\Documents\GitHub\reallab3\exts\nanovg\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\engine;C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\exts\glew\include;C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\exts\glfw\include;C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\exts\imgui;C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\exts\imgui\examples\opengl3_example;C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\exts\nanovg\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Gregg\Documents\GitHub\reallab3\engine;C:\Users\Gregg\Documents\GitHub\reallab3\exts\glew\include;C:\Users\Gregg\Documents\GitHub\reallab3\exts\glfw\include;C:\Users\Gregg\Documents\GitHub\reallab3\exts\imgui;C:\Users\Gregg\Documents\GitHub\reallab3\exts\imgui\examples\opengl3_example;C:\Users\Gregg\Documents\GitHub\reallab3\exts\nanovg\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -164,8 +162,8 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/rubcap-8-local/Documents/GitGood/mesh resource/labb2/build/projects/example/Release/example.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/rubcap-8-local/Documents/GitGood/mesh resource/labb2/build/projects/example/example.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/Users/Gregg/Documents/GitHub/reallab3/build/projects/example/Release/example.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Gregg/Documents/GitHub/reallab3/build/projects/example/example.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -174,9 +172,8 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\engine;C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\exts\glew\include;C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\exts\glfw\include;C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\exts\imgui;C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\exts\imgui\examples\opengl3_example;C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\exts\nanovg\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Gregg\Documents\GitHub\reallab3\engine;C:\Users\Gregg\Documents\GitHub\reallab3\exts\glew\include;C:\Users\Gregg\Documents\GitHub\reallab3\exts\glfw\include;C:\Users\Gregg\Documents\GitHub\reallab3\exts\imgui;C:\Users\Gregg\Documents\GitHub\reallab3\exts\imgui\examples\opengl3_example;C:\Users\Gregg\Documents\GitHub\reallab3\exts\nanovg\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
-      <CompileAs>CompileAsCpp</CompileAs>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
       <Optimization>MinSpace</Optimization>
@@ -192,10 +189,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;GLEW_STATIC;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\engine;C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\exts\glew\include;C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\exts\glfw\include;C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\exts\imgui;C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\exts\imgui\examples\opengl3_example;C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\exts\nanovg\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Gregg\Documents\GitHub\reallab3\engine;C:\Users\Gregg\Documents\GitHub\reallab3\exts\glew\include;C:\Users\Gregg\Documents\GitHub\reallab3\exts\glfw\include;C:\Users\Gregg\Documents\GitHub\reallab3\exts\imgui;C:\Users\Gregg\Documents\GitHub\reallab3\exts\imgui\examples\opengl3_example;C:\Users\Gregg\Documents\GitHub\reallab3\exts\nanovg\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\engine;C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\exts\glew\include;C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\exts\glfw\include;C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\exts\imgui;C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\exts\imgui\examples\opengl3_example;C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\exts\nanovg\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Gregg\Documents\GitHub\reallab3\engine;C:\Users\Gregg\Documents\GitHub\reallab3\exts\glew\include;C:\Users\Gregg\Documents\GitHub\reallab3\exts\glfw\include;C:\Users\Gregg\Documents\GitHub\reallab3\exts\imgui;C:\Users\Gregg\Documents\GitHub\reallab3\exts\imgui\examples\opengl3_example;C:\Users\Gregg\Documents\GitHub\reallab3\exts\nanovg\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -208,8 +205,8 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/rubcap-8-local/Documents/GitGood/mesh resource/labb2/build/projects/example/MinSizeRel/example.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/rubcap-8-local/Documents/GitGood/mesh resource/labb2/build/projects/example/example.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/Users/Gregg/Documents/GitHub/reallab3/build/projects/example/MinSizeRel/example.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Gregg/Documents/GitHub/reallab3/build/projects/example/example.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -218,9 +215,8 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\engine;C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\exts\glew\include;C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\exts\glfw\include;C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\exts\imgui;C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\exts\imgui\examples\opengl3_example;C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\exts\nanovg\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Gregg\Documents\GitHub\reallab3\engine;C:\Users\Gregg\Documents\GitHub\reallab3\exts\glew\include;C:\Users\Gregg\Documents\GitHub\reallab3\exts\glfw\include;C:\Users\Gregg\Documents\GitHub\reallab3\exts\imgui;C:\Users\Gregg\Documents\GitHub\reallab3\exts\imgui\examples\opengl3_example;C:\Users\Gregg\Documents\GitHub\reallab3\exts\nanovg\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
-      <CompileAs>CompileAsCpp</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
@@ -235,10 +231,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;GLEW_STATIC;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\engine;C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\exts\glew\include;C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\exts\glfw\include;C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\exts\imgui;C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\exts\imgui\examples\opengl3_example;C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\exts\nanovg\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Gregg\Documents\GitHub\reallab3\engine;C:\Users\Gregg\Documents\GitHub\reallab3\exts\glew\include;C:\Users\Gregg\Documents\GitHub\reallab3\exts\glfw\include;C:\Users\Gregg\Documents\GitHub\reallab3\exts\imgui;C:\Users\Gregg\Documents\GitHub\reallab3\exts\imgui\examples\opengl3_example;C:\Users\Gregg\Documents\GitHub\reallab3\exts\nanovg\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\engine;C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\exts\glew\include;C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\exts\glfw\include;C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\exts\imgui;C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\exts\imgui\examples\opengl3_example;C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\exts\nanovg\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Gregg\Documents\GitHub\reallab3\engine;C:\Users\Gregg\Documents\GitHub\reallab3\exts\glew\include;C:\Users\Gregg\Documents\GitHub\reallab3\exts\glfw\include;C:\Users\Gregg\Documents\GitHub\reallab3\exts\imgui;C:\Users\Gregg\Documents\GitHub\reallab3\exts\imgui\examples\opengl3_example;C:\Users\Gregg\Documents\GitHub\reallab3\exts\nanovg\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -251,8 +247,8 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/rubcap-8-local/Documents/GitGood/mesh resource/labb2/build/projects/example/RelWithDebInfo/example.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/rubcap-8-local/Documents/GitGood/mesh resource/labb2/build/projects/example/example.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/Users/Gregg/Documents/GitHub/reallab3/build/projects/example/RelWithDebInfo/example.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Gregg/Documents/GitHub/reallab3/build/projects/example/example.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -260,10 +256,11 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\projects\example\CMakeLists.txt">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/rubcap-8-local/Documents/GitGood/mesh resource/labb2/projects/example/CMakeLists.txt</Message>
+    <CustomBuild Include="C:\Users\Gregg\Documents\GitHub\reallab3\projects\example\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/Gregg/Documents/GitHub/reallab3/projects/example/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/rubcap-8-local/Documents/GitGood/mesh resource/labb2" "-BC:/Users/rubcap-8-local/Documents/GitGood/mesh resource/labb2/build" --check-stamp-file "C:/Users/rubcap-8-local/Documents/GitGood/mesh resource/labb2/build/projects/example/CMakeFiles/generate.stamp"
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Gregg/Documents/GitHub/reallab3 -BC:/Users/Gregg/Documents/GitHub/reallab3/build --check-stamp-file C:/Users/Gregg/Documents/GitHub/reallab3/build/projects/example/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -272,11 +269,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\build\projects\example\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Gregg\Documents\GitHub\reallab3\build\projects\example\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/rubcap-8-local/Documents/GitGood/mesh resource/labb2/projects/example/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/Gregg/Documents/GitHub/reallab3/projects/example/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/rubcap-8-local/Documents/GitGood/mesh resource/labb2" "-BC:/Users/rubcap-8-local/Documents/GitGood/mesh resource/labb2/build" --check-stamp-file "C:/Users/rubcap-8-local/Documents/GitGood/mesh resource/labb2/build/projects/example/CMakeFiles/generate.stamp"
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Gregg/Documents/GitHub/reallab3 -BC:/Users/Gregg/Documents/GitHub/reallab3/build --check-stamp-file C:/Users/Gregg/Documents/GitHub/reallab3/build/projects/example/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -285,11 +282,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\build\projects\example\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Gregg\Documents\GitHub\reallab3\build\projects\example\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/rubcap-8-local/Documents/GitGood/mesh resource/labb2/projects/example/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/Gregg/Documents/GitHub/reallab3/projects/example/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/rubcap-8-local/Documents/GitGood/mesh resource/labb2" "-BC:/Users/rubcap-8-local/Documents/GitGood/mesh resource/labb2/build" --check-stamp-file "C:/Users/rubcap-8-local/Documents/GitGood/mesh resource/labb2/build/projects/example/CMakeFiles/generate.stamp"
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Gregg/Documents/GitHub/reallab3 -BC:/Users/Gregg/Documents/GitHub/reallab3/build --check-stamp-file C:/Users/Gregg/Documents/GitHub/reallab3/build/projects/example/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -298,11 +295,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\build\projects\example\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Gregg\Documents\GitHub\reallab3\build\projects\example\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/rubcap-8-local/Documents/GitGood/mesh resource/labb2/projects/example/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/Gregg/Documents/GitHub/reallab3/projects/example/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/rubcap-8-local/Documents/GitGood/mesh resource/labb2" "-BC:/Users/rubcap-8-local/Documents/GitGood/mesh resource/labb2/build" --check-stamp-file "C:/Users/rubcap-8-local/Documents/GitGood/mesh resource/labb2/build/projects/example/CMakeFiles/generate.stamp"
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Gregg/Documents/GitHub/reallab3 -BC:/Users/Gregg/Documents/GitHub/reallab3/build --check-stamp-file C:/Users/Gregg/Documents/GitHub/reallab3/build/projects/example/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -311,45 +308,37 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\build\projects\example\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Gregg\Documents\GitHub\reallab3\build\projects\example\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\projects\example\code\exampleapp.h" />
-    <ClCompile Include="C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\projects\example\code\exampleapp.cc" />
-    <ClCompile Include="C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\projects\example\code\main.cc" />
+    <ClInclude Include="C:\Users\Gregg\Documents\GitHub\reallab3\projects\example\code\exampleapp.h" />
+    <ClCompile Include="C:\Users\Gregg\Documents\GitHub\reallab3\projects\example\code\exampleapp.cc" />
+    <ClCompile Include="C:\Users\Gregg\Documents\GitHub\reallab3\projects\example\code\main.cc" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\build\ZERO_CHECK.vcxproj">
-      <Project>{82BC3058-F67B-39EC-9B74-1C7E30ECFCAF}</Project>
+    <ProjectReference Include="C:\Users\Gregg\Documents\GitHub\reallab3\build\ZERO_CHECK.vcxproj">
+      <Project>{3B1CB3C2-0B86-3B8F-AE8F-77CB149F21C2}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\build\engine\core\core.vcxproj">
-      <Project>{15B26AE1-331F-3416-81AF-346C80AFAD0C}</Project>
+    <ProjectReference Include="C:\Users\Gregg\Documents\GitHub\reallab3\build\engine\core\core.vcxproj">
+      <Project>{A680D783-51B0-33FE-9597-3493FCE57D1A}</Project>
       <Name>core</Name>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\build\exts\glew\glew.vcxproj">
-      <Project>{9E839209-8119-3028-B2ED-A63D9967EB12}</Project>
+    <ProjectReference Include="C:\Users\Gregg\Documents\GitHub\reallab3\build\exts\glew\glew.vcxproj">
+      <Project>{AF560FF2-8B5E-3620-AD29-1AA4BF02A92C}</Project>
       <Name>glew</Name>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\build\exts\glfw\src\glfw.vcxproj">
-      <Project>{F1FB0EDB-8A56-3667-904F-811FA89B55C3}</Project>
+    <ProjectReference Include="C:\Users\Gregg\Documents\GitHub\reallab3\build\exts\glfw\src\glfw.vcxproj">
+      <Project>{22B2B20D-DC01-3592-B51D-9C71C8464287}</Project>
       <Name>glfw</Name>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\rubcap-8-local\Documents\GitGood\mesh resource\labb2\build\exts\nanovg.vcxproj">
-      <Project>{8E91C7F2-1430-3DB1-9A31-49C9923F1FCA}</Project>
+    <ProjectReference Include="C:\Users\Gregg\Documents\GitHub\reallab3\build\exts\nanovg.vcxproj">
+      <Project>{0A4F671D-AA3A-39E7-A4A6-9C5DA72800D4}</Project>
       <Name>nanovg</Name>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

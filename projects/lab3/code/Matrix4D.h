@@ -395,6 +395,18 @@ public:
 		}
 	}
 
+	Matrix4D perspective(float left, float right, float bottom, float top, float near, float far) {
+		Matrix4D persp;
+		persp[0][0] = (2 * near) / (right - left);
+		persp[0][2] = (right + left) / (right - left);
+		persp[1][1] = (2 * near) / (top - bottom);
+		persp[1][2] = (top + bottom) / (top - bottom);
+		persp[2][2] = -(far + near) / (far - near);
+		persp[2][3] = -(2 * far * near) / (far - near);
+
+		return persp;
+	}
+
 	///
 	/// Translate
 	///
