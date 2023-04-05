@@ -37,6 +37,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("C:/Users/Gregg/Documents/GitHub/reallab3/build/exts/cmake_install.cmake")
   include("C:/Users/Gregg/Documents/GitHub/reallab3/build/engine/cmake_install.cmake")
   include("C:/Users/Gregg/Documents/GitHub/reallab3/build/projects/cmake_install.cmake")
+  include("C:/Users/Gregg/Documents/GitHub/reallab3/build/glm/cmake_install.cmake")
 
 endif()
 

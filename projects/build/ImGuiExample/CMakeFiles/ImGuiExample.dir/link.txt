@@ -1,1 +1,0 @@
-/usr/bin/c++ -rdynamic CMakeFiles/ImGuiExample.dir/code/exampleapp.o CMakeFiles/ImGuiExample.dir/code/main.o -o ImGuiExample  -lcore -lrender 

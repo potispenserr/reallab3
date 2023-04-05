@@ -114,6 +114,21 @@ CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 //Value Computed by CMake
 CMAKE_PROJECT_NAME:STATIC=gscept_lab_env
 
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION:STATIC=0.9.9
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_MAJOR:STATIC=0
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_MINOR:STATIC=9
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_PATCH:STATIC=9
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_TWEAK:STATIC=
+
 //RC compiler
 CMAKE_RC_COMPILER:FILEPATH=rc
 
@@ -256,6 +271,12 @@ glew_BINARY_DIR:STATIC=C:/Users/Gregg/Documents/GitHub/reallab3/build/exts/glew
 glew_SOURCE_DIR:STATIC=C:/Users/Gregg/Documents/GitHub/reallab3/exts/glew
 
 //Value Computed by CMake
+glm_BINARY_DIR:STATIC=C:/Users/Gregg/Documents/GitHub/reallab3/build/glm
+
+//Value Computed by CMake
+glm_SOURCE_DIR:STATIC=C:/Users/Gregg/Documents/GitHub/reallab3/glm
+
+//Value Computed by CMake
 gscept_lab_env_BINARY_DIR:STATIC=C:/Users/Gregg/Documents/GitHub/reallab3/build
 
 //Value Computed by CMake
@@ -357,7 +378,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MT
 CMAKE_MT-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=12
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=14
 //Platform information initialized
 CMAKE_PLATFORM_INFO_INITIALIZED:INTERNAL=1
 //noop for ranlib

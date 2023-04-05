@@ -50,10 +50,10 @@ public:
 	///
 	///getters
 	///
-	float  x() { return vecarray[0]; }
-	float  y() { return vecarray[1]; }
-	float  z() { return vecarray[2]; }
-	float  w() { return vecarray[3]; }
+	float&  x() { return vecarray[0]; }
+	float&  y() { return vecarray[1]; }
+	float&  z() { return vecarray[2]; }
+	float&  w() { return vecarray[3]; }
 
 	///
 	///setters
@@ -102,7 +102,6 @@ public:
 		newvec.vecarray[0] = vecarray[0] - v.vecarray[0];
 		newvec.vecarray[1] = vecarray[1] - v.vecarray[1];
 		newvec.vecarray[2] = vecarray[2] - v.vecarray[2];
-		newvec.vecarray[3] = vecarray[3] - v.vecarray[3];
 		return newvec;
 	}
 
@@ -128,10 +127,10 @@ public:
 		return *this;
 	}
 
-	float operator [] (int i) const {
+	/*float operator [] (int i) const {
 		//return *(Vector4D*)(&mxarr[i]);
 		return vecarray[i];
-	}
+	}*/
 
 	float& operator [] (int i) {
 		return vecarray[i];
@@ -149,8 +148,10 @@ public:
 	///
 	/// Returns the dot product of 2 vectors
 	///
-	float dot(const Vector4D& a, const Vector4D& b) {
-		return((a.vecarray[0] * b.vecarray[0]) + (a.vecarray[1] * b.vecarray[1]) + (a.vecarray[2] * b.vecarray[2]) + (a.vecarray[3] * b.vecarray[3]));
+	float dot(Vector4D& a, Vector4D& b) {
+		float result = (a.vecarray[0] * b.vecarray[0]) + (a.vecarray[1] * b.vecarray[1]) + (a.vecarray[2] * b.vecarray[2]);
+
+		return(result);
 	}
 
 	///
@@ -158,24 +159,29 @@ public:
 	///
 	Vector4D cross(const Vector4D& a, const Vector4D& b) {
 		Vector4D cross;
-		cross.set(0, a.vecarray[1] * b.vecarray[2] - a.vecarray[2] * b.vecarray[1]);
-		cross.set(1, a.vecarray[2] * b.vecarray[0] - a.vecarray[0] * b.vecarray[2]);
-		cross.set(2, a.vecarray[0] * b.vecarray[1] - a.vecarray[1] * b.vecarray[0]);
+		cross.vecarray[0] =  (a.vecarray[1] * b.vecarray[2]) - (a.vecarray[2] * b.vecarray[1]);
+		cross.vecarray[1] =  (a.vecarray[2] * b.vecarray[0]) - (a.vecarray[0] * b.vecarray[2]);
+		cross.vecarray[2] =  (a.vecarray[0] * b.vecarray[1]) - (a.vecarray[1] * b.vecarray[0]);
 		return cross;
 	}
 
 	///
-	/// Returns the vector norm
+	/// Returns the normalized vector
 	///
 	Vector4D norm() {
 		Vector4D normvec;
-		float length = POW2(vecarray[0]) + POW2(vecarray[1]) + POW2(vecarray[2]) + POW2(vecarray[3]);
+		float length = POW2(vecarray[0]) + POW2(vecarray[1]) + POW2(vecarray[2]);
 		float norm = sqrt(length);
-		normvec.vecarray[0] = (this->vecarray[0] / norm);
-		normvec.vecarray[1] = (this->vecarray[1] / norm);
-		normvec.vecarray[2] = (this->vecarray[2] / norm);
-		normvec.vecarray[3] = (this->vecarray[3] / norm);
-		return normvec;
+		if (length > 0) {
+			normvec.x() = (this->x() / norm);
+			normvec.y() = (this->y() / norm);
+			normvec.z() = (this->z() / norm);
+			return normvec;
+		}
+		else {
+			return *this;
+		}
+		
 	}
 
 	

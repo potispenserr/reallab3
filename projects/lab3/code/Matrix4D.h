@@ -19,6 +19,8 @@
 ///You should have received a copy of the GNU General Public License
 ///along with Lab 1.If not, see < https://www.gnu.org/licenses/>.}
 
+#define PI           3.14159265358979323846 
+
 class Matrix4D
 {
 
@@ -95,6 +97,7 @@ public:
 		mxarr[2][0] = m.mxarr[2][0];
 		mxarr[2][1] = m.mxarr[2][1];
 		mxarr[2][2] = m.mxarr[2][2];
+		mxarr[2][3] = m.mxarr[2][3];
 
 		mxarr[3][0] = m.mxarr[3][0];
 		mxarr[3][1] = m.mxarr[3][1];
@@ -169,6 +172,7 @@ public:
 				if (j == 3)
 					std::cout << "\n" << "\n";
 			}
+		std::cout << "--------" << "\n";
 	}
 
 
@@ -182,15 +186,22 @@ public:
 	Matrix4D operator*(Matrix4D& m)
 	{
 		Matrix4D newmx;
-		for (int i = 0; i < 4; ++i) {
-			for (int j = 0; j < 4; ++j) {
-				newmx.mxarr[i][j] = 0;
-				for (int k = 0; k < 4; ++k) {
-					newmx.mxarr[i][j] += this->mxarr[i][k] * m.mxarr[k][j];
-				}
-			}
-		}
-
+		newmx.mxarr[0][0] = mxarr[0][0] * m.mxarr[0][0] + mxarr[0][1] * m.mxarr[1][0] + mxarr[0][2] * m.mxarr[2][0] + mxarr[0][3] * m.mxarr[3][0];
+		newmx.mxarr[0][1] = mxarr[0][0] * m.mxarr[0][1] + mxarr[0][1] * m.mxarr[1][1] + mxarr[0][2] * m.mxarr[2][1] + mxarr[0][3] * m.mxarr[3][1];
+		newmx.mxarr[0][2] = mxarr[0][0] * m.mxarr[0][2] + mxarr[0][1] * m.mxarr[1][2] + mxarr[0][2] * m.mxarr[2][2] + mxarr[0][3] * m.mxarr[3][2];
+		newmx.mxarr[0][3] = mxarr[0][0] * m.mxarr[0][3] + mxarr[0][1] * m.mxarr[1][3] + mxarr[0][2] * m.mxarr[2][3] + mxarr[0][3] * m.mxarr[3][3];
+		newmx.mxarr[1][0] = mxarr[1][0] * m.mxarr[0][0] + mxarr[1][1] * m.mxarr[1][0] + mxarr[1][2] * m.mxarr[2][0] + mxarr[1][3] * m.mxarr[3][0];
+		newmx.mxarr[1][1] = mxarr[1][0] * m.mxarr[0][1] + mxarr[1][1] * m.mxarr[1][1] + mxarr[1][2] * m.mxarr[2][1] + mxarr[1][3] * m.mxarr[3][1];
+		newmx.mxarr[1][2] = mxarr[1][0] * m.mxarr[0][2] + mxarr[1][1] * m.mxarr[1][2] + mxarr[1][2] * m.mxarr[2][2] + mxarr[1][3] * m.mxarr[3][2];
+		newmx.mxarr[1][3] = mxarr[1][0] * m.mxarr[0][3] + mxarr[1][1] * m.mxarr[1][3] + mxarr[1][2] * m.mxarr[2][3] + mxarr[1][3] * m.mxarr[3][3];
+		newmx.mxarr[2][0] = mxarr[2][0] * m.mxarr[0][0] + mxarr[2][1] * m.mxarr[1][0] + mxarr[2][2] * m.mxarr[2][0] + mxarr[2][3] * m.mxarr[3][0];
+		newmx.mxarr[2][1] = mxarr[2][0] * m.mxarr[0][1] + mxarr[2][1] * m.mxarr[1][1] + mxarr[2][2] * m.mxarr[2][1] + mxarr[2][3] * m.mxarr[3][1];
+		newmx.mxarr[2][2] = mxarr[2][0] * m.mxarr[0][2] + mxarr[2][1] * m.mxarr[1][2] + mxarr[2][2] * m.mxarr[2][2] + mxarr[2][3] * m.mxarr[3][2];
+		newmx.mxarr[2][3] = mxarr[2][0] * m.mxarr[0][3] + mxarr[2][1] * m.mxarr[1][3] + mxarr[2][2] * m.mxarr[2][3] + mxarr[2][3] * m.mxarr[3][3];
+		newmx.mxarr[3][0] = mxarr[3][0] * m.mxarr[0][0] + mxarr[3][1] * m.mxarr[1][0] + mxarr[3][2] * m.mxarr[2][0] + mxarr[3][3] * m.mxarr[3][0];
+		newmx.mxarr[3][1] = mxarr[3][0] * m.mxarr[0][1] + mxarr[3][1] * m.mxarr[1][1] + mxarr[3][2] * m.mxarr[2][1] + mxarr[3][3] * m.mxarr[3][1];
+		newmx.mxarr[3][2] = mxarr[3][0] * m.mxarr[0][2] + mxarr[3][1] * m.mxarr[1][2] + mxarr[3][2] * m.mxarr[2][2] + mxarr[3][3] * m.mxarr[3][2];
+		newmx.mxarr[3][3] = mxarr[3][0] * m.mxarr[0][3] + mxarr[3][1] * m.mxarr[1][3] + mxarr[3][2] * m.mxarr[2][3] + mxarr[3][3] * m.mxarr[3][3];
 		return newmx;
 	}
 
@@ -209,21 +220,18 @@ public:
 	///
 	///Array overload
 	///
-	Vector4D operator [] (int i) const {
-		//return *(Vector4D*)(&mxarr[i]);
-		//return Vector4D(mxarr[i][0], mxarr[i][1], mxarr[i][2], mxarr[i][3]);
-		return mxarr[i];
-	}
 	Vector4D& operator [] (int i) {
 		//return *(Vector4D*)(&mxarr[i]);
 		//return vecarray[i];
 		return mxarr[i];
 	}
 
+
+
 	///
 	///assignment overload
 	///
-	void operator=(const Matrix4D& m)
+	void operator=(Matrix4D m)
 	{
 		mxarr[0][0] = m.mxarr[0][0];
 		mxarr[0][1] = m.mxarr[0][1];
@@ -261,8 +269,6 @@ public:
 		m = transp;
 	}
 
-	///Somewhat shamefully borrowed from
-	///https://stackoverflow.com/questions/1148309/inverting-a-4x4-matrix
 	///Inverts matrix, calculates determinant and assigns the inverse by reference
 	///Throws an exception if determinant is 0
 	void invert(Matrix4D& m) {
@@ -395,27 +401,56 @@ public:
 		}
 	}
 
-	Matrix4D perspective(float left, float right, float bottom, float top, float near, float far) {
-		Matrix4D persp;
-		persp[0][0] = (2 * near) / (right - left);
-		persp[0][2] = (right + left) / (right - left);
-		persp[1][1] = (2 * near) / (top - bottom);
-		persp[1][2] = (top + bottom) / (top - bottom);
-		persp[2][2] = -(far + near) / (far - near);
-		persp[2][3] = -(2 * far * near) / (far - near);
+	Matrix4D perspective(float fov, float aspect, float near, float far) {
 
+
+		Matrix4D persp;
+		persp[0][0] = 1 / (aspect * tan(fov / 2));
+		persp[1][1] = 1 / (tan(fov / 2));
+		persp[2][2] = -(far + near) / (far - near);
+		persp[2][3] = -1;
+		persp[3][2] = -(2 * far * near) / (far - near);
 		return persp;
+	}
+
+	Matrix4D lookat(Vector4D camPos, Vector4D camTarget, Vector4D up) {
+
+		Vector4D directionToCam = (camTarget - camPos).norm();
+		Vector4D camRight = (up.cross(directionToCam, up)).norm();
+		Vector4D camUp = (camUp.cross(camRight, directionToCam)).norm();
+
+		Matrix4D lookat;
+		lookat[0][0] = camRight.x();
+		lookat[0][1] = camRight.y();
+		lookat[0][2] = camRight.z();
+
+		lookat[1][0] = camUp.x();
+		lookat[1][1] = camUp.y();
+		lookat[1][2] = camUp.z();
+
+		lookat[2][0] = -(directionToCam.x());
+		lookat[2][1] = -(directionToCam.y());
+		lookat[2][2] = -(directionToCam.z());
+
+
+
+		lookat[3][0] = -(camRight.dot(camRight, camPos));
+		lookat[3][1] = -(camUp.dot(camUp, camPos));
+		lookat[3][2] = (directionToCam.dot(directionToCam, camPos));
+
+		return lookat;
+
 	}
 
 	///
 	/// Translate
 	///
 	Matrix4D translation(Vector4D v) {
-		Matrix4D transmx(1.0f, 0.0f, 0.0f, v.x(),
+		return Matrix4D(1.0f, 0.0f, 0.0f, v.x(),
 				         0.0f, 1.0f, 0.0f, v.y(),
 			             0.0f, 0.0f, 1.0f, v.z(),
 			             0.0f, 0.0f, 0.0f, 1.0f);
-		return transmx;
+
 	}
 
 	///

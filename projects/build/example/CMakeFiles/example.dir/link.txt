@@ -1,1 +1,0 @@
-/usr/bin/c++ -rdynamic CMakeFiles/example.dir/code/exampleapp.o CMakeFiles/example.dir/code/main.o -o example  -lcore -lrender 

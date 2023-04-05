@@ -12,13 +12,9 @@ public:
 
 	}
 
-
-	float texData[12]{
-		0.5f,	0.5f,	0.0f,			// top right
-		0.5f,  -0.5f,	0.0f,			// bottom right
-	   -0.5f,  -0.5f,	0.0f,			// bottom left
-	   -0.5f,	0.5f,	0.0f,			// top left
-	};
+	~TextureResource() {
+		glDeleteTextures(1, &texID);
+	}
 
 	float borderColor[4] = { 1.0f, 1.0f, 0.0f, 1.0f };
 
@@ -26,11 +22,12 @@ public:
 	void bindTex();
 	void loadTex(unsigned char* texData);
 
+
 	int width;
 	int height;
 	int nChannels;
 
-	unsigned int texID;
-	unsigned char* texPictureData;
+	unsigned int texID = 0;
+	unsigned char* texPictureData = NULL;
 	
 };

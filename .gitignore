@@ -6,6 +6,7 @@
 #New stuff
 build/*
 .vscode/*
+bin/
 
 
 # User-specific files
